@@ -1,5 +1,6 @@
 * {
   border:none;
+  padding-top: 10px;
 }
 
 .container {
@@ -31,10 +32,17 @@ flex-direction: column;
 justify-items: center;
 }
 
+.main-div{
+  border:1px solid grey;
+  margin:10px;
+  padding:10px;
+}
+
 .profile-pic{
   width:30%;
-  border-radius:55px;
+  border-radius:40%;
   align-self: center;
+  margin-bottom:15px;
 }
 
 .btn{
@@ -43,13 +51,31 @@ justify-items: center;
     height:25px;
     border-radius:25px;
     width:108px;
+    text-align: center;
+    
 }
 
 .contact-btn{
   width:50%;
   align-self: center;
-
   height:35px;
   margin-top:10px;
+}
 
+.description-p{
+  margin:19px;
+  font-size:20px;
+}
+
+.problem-solving-span{
+  display: block;
+  margin-right:auto;
+  margin-left:auto;
+  text-align: center;
+  font-size:35px;
+  margin:10px;
+}
+
+.hr{
+  border: grey 1px solid;
 }
