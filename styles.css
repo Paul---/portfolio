@@ -100,6 +100,8 @@ body {
 
 .hr {
   border: grey 1px solid;
+  padding:none;
+  margin:none;
 }
 
 .med-profile-pic {
