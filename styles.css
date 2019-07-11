@@ -1,7 +1,6 @@
 * {
   padding: 10px 10px 10px 10px;
   box-sizing: border-box;
-  border:1px pink dotted;
 }
 
 body {
@@ -169,6 +168,7 @@ body {
 }
 li{
   padding:0px;
+  margin-left:10px;
 }
 
 .icon-h3{
