@@ -1,17 +1,15 @@
 * {
-  padding: 10px 10px 10px 10px;
+  padding:2px;
   box-sizing: border-box;
 }
 
 body {
   margin: 5px;
-  background-color: #3f94e7;
 }
 
 .primary {
   background-color: white;
   max-width: 1400px;
-  border: 1px lightgray solid;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -36,6 +34,15 @@ body {
 .h-section {
   flex-direction: column;
 }
+.hero-text{
+  text-align: center;
+  font-size:35px;
+  background-color:lightgray;
+  width:98%;
+  height:250px;
+  position: relative;
+  left:6px;
+}
 
 .hero-h1 {
   text-align: center;
@@ -54,9 +61,21 @@ body {
 }
 
 .main-div {
+  background-color:lightgray;
+  border-radius:8px;
+  height:fit-content;
   border: 1px solid grey;
   margin: 10px;
   padding: 0px 10px 10px 10px;
+}
+
+.photo{
+  align-self: center;
+  width:155px;
+  height:125px;
+  background-color:grey;
+  border-radius: 200%;
+  margin-top:5px;
 }
 
 .profile-pic {
@@ -85,7 +104,9 @@ body {
 }
 
 .description-p {
-  margin: 19px;
+  border:1px grey dotted;
+  height:550px;
+  /* margin: 19px; */
   font-size: 20px;
 }
 
@@ -111,7 +132,19 @@ body {
 .icon-section {
   display: none;
 }
+.projects{
+  border:1px solid grey;
+  height:300px;
+  width:100%;
+  position: relative;
+  background-color:lightgray;
+}
+.bottom-btn-section{
+  background-color: lightgray;
+  height:75px;
+ width: auto;
 
+}
 
 @media (min-width: 768px) {
 
@@ -121,6 +154,7 @@ body {
 
   .main-div {
     border: none;
+    height:;
   }
 
   .hr {
@@ -128,7 +162,7 @@ body {
   }
 
   .top-div {
-    border-bottom: 1px grey solid;
+    border-bottom: 1px lightgrey solid;
   }
 
   .top-section {
@@ -140,22 +174,21 @@ body {
   .lightbulb {
     align-self: center;
     position: relative;
-    top: -25px;
+    top:-10px;
     margin-left: 10px;
     max-width: 95px;
   }
 
   .top-btn-section {
     display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 15px;
-
+    justify-content: space-between;
+    width:100%;   
   }
 
   .btn {
     height: 45px;
-    width: 125px;
+    width: 105px;
+    flex-grow: 2;
   }
 
   .contact-btn {
@@ -167,13 +200,17 @@ body {
   }
 
   .med-profile-pic {
+    background-color:lightslategray;
     display: block;
     border-radius: 50px;
     width: 165px;
     height: 155px;
-    margin-left: auto;
-    margin-right: auto;
+   margin:10px auto 10px auto;
   }
+
+.photo{
+  display: none;
+}
 
   .profile-pic {
     display: none;
@@ -185,6 +222,9 @@ body {
   }
 
   .icon-section {
+    font-size:45px;
+    height:65px;
+    background-color:grey;
     display: flex;
     justify-items: space-between;
   }
@@ -193,6 +233,7 @@ body {
     width: 15%;
     position: relative;
     justify-items: center;
+    display:none;
   }
 
   .css3 {
@@ -232,7 +273,8 @@ body {
   }
 
   .description-p {
-    height: 100%;
+      height:600px;
+
   }
 
   .lightbulb {
@@ -243,18 +285,24 @@ body {
 
   .description-p {
     margin: 5px;
+    width:auto;
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    border:none;
   }
 
   .med-profile-pic {
     width: 250px;
     height: 240px;
+    background-color:lightslategray;
+    margin: 20px auto 10px auto;
+    border: none;
   }
 
   .icon-section {
-    width: 100%
+    width: 100%;
+    background-color:grey;
   }
 
   .top-btn-section {
