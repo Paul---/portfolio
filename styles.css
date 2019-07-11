@@ -1,7 +1,7 @@
 * {
   padding: 10px 10px 10px 10px;
   box-sizing: border-box;
-  border:1px pink dotted;
+  /* border:1px pink dotted; */
 }
 
 body {
@@ -61,6 +61,7 @@ body {
   margin: 0px;
   text-align: center;
   font-size: 20px;
+  padding:0px;
 }
 
 .main-section {
@@ -81,7 +82,8 @@ body {
   width: 30%;
   border-radius: 40%;
   align-self: center;
-  margin-bottom: 15px;
+  margin:0px;
+  padding:0px;
 }
 
 .btn {
@@ -103,7 +105,7 @@ body {
 }
 
 .description-p {
-  margin: 19px;
+  margin: 10px;
   font-size: 20px;
 }
 
@@ -160,11 +162,11 @@ body {
 
 .texas-list-h4{
   padding:0px;
-  margin:5px 0px 0px 0px;
+  margin:8px 0px 0px 0px;
 }
 
 .texas-ol{
-  padding:0px 0px 5px 0px;
+  padding:0px 0px 5px 10px;
   margin:0px;
 }
 li{
@@ -341,5 +343,7 @@ li{
     max-width: 80000px;
     justify-content: center;
   }
+
+  
 
 }
