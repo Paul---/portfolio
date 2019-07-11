@@ -1,10 +1,15 @@
 * {
   padding:2px;
   box-sizing: border-box;
+  /* border:1px pink dotted; */
 }
 
 body {
-  margin: 5px;
+
+  padding-top: 3px;
+  background-color: rgb(16, 141, 198);
+  font-family: 'Roboto',
+    sans-serif;
 }
 
 .primary {
@@ -20,15 +25,27 @@ body {
   justify-content: center;
 }
 
+.top-section {
+  margin: 0px;
+  padding: 0px;
+}
+
 .lightbulb {
   display: inline-block;
   border: none;
   border-radius: 180%;
+  width: 150px;
   margin: 0px;
 }
 
 .top-btn-section {
   display: none;
+}
+
+.contact-section{
+  border:1px lightgrey solid;
+  border-radius:8px;
+  display:none;
 }
 
 .h-section {
@@ -53,20 +70,21 @@ body {
   margin: 0px;
   text-align: center;
   font-size: 20px;
+  padding:0px;
 }
 
 .main-section {
   flex-direction: column;
   justify-items: center;
+  margin-bottom: 3px;
+  padding-bottom: 5px;
 }
 
 .main-div {
-  background-color:lightgray;
-  border-radius:8px;
-  height:fit-content;
-  border: 1px solid grey;
+  border: 1px solid lightgrey;
   margin: 10px;
   padding: 0px 10px 10px 10px;
+  border-radius: 8px;
 }
 
 .photo{
@@ -82,17 +100,18 @@ body {
   width: 30%;
   border-radius: 40%;
   align-self: center;
-  margin-bottom: 15px;
+  margin:0px;
+  padding:0px;
 }
 
 .btn {
-  border: none;
   margin: 10px;
   height: 25px;
   border-radius: 5px;
   width: 108px;
   text-align: center;
-  background-color: rgb(202, 185, 185);
+  color: white;
+  background-color: rgb(16, 141, 198);
   padding: 0px;
 }
 
@@ -104,9 +123,7 @@ body {
 }
 
 .description-p {
-  border:1px grey dotted;
-  height:550px;
-  /* margin: 19px; */
+  margin: 10px;
   font-size: 20px;
 }
 
@@ -117,18 +134,65 @@ body {
   text-align: center;
   font-size: 25px;
   margin: 10px;
-}
-
-.hr {
-  border: grey 1px solid;
-  padding:none;
-  margin:none;
+  font-family: 'Merriweather', serif;
 }
 
 .med-profile-pic {
   display: none;
 }
 
+.projects {
+  border: 1px lightgrey dotted;
+  margin: 10px;
+  border-radius: 8px;
+ }
+
+.projects-h2{
+  width:fit-content;
+  margin:0px;
+  padding:0px;
+}
+.texas-h4{
+  margin:0px;
+  padding:0px;
+}
+
+.texas-a {
+  margin:0px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.texas-p{
+  display:inline-block;
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+
+.texas-project-img {
+  width: 100%;
+  max-width:500px;
+  padding:0px;
+  margin:3px;
+}
+
+.texas-list-h4{
+  padding:0px;
+  margin:8px 0px 0px 0px;
+}
+
+.texas-ol{
+  padding:0px 0px 5px 10px;
+  margin:0px;
+}
+li{
+  padding:0px;
+}
+
+.icon-h3{
+  display:none;
+}
 .icon-section {
   display: none;
 }
@@ -181,13 +245,14 @@ body {
 
   .top-btn-section {
     display: flex;
-    justify-content: space-between;
-    width:100%;   
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 0px;
   }
 
   .btn {
     height: 45px;
-    width: 105px;
+    width: 125px;
     flex-grow: 2;
   }
 
@@ -221,6 +286,12 @@ body {
     font-size: 40px;
   }
 
+  .icon-h3{
+  display: flex;
+  font-size:25px;
+  margin:0px;
+  }
+
   .icon-section {
     font-size:45px;
     height:65px;
@@ -242,23 +313,26 @@ body {
   }
 
   .html5 {
-    top: 40px;
-    height: 120px;
+    top: 20px;
+    height: 140px;
     width: 125px;
   }
 
   .jQuery {
     height: 130px;
+    width: 125px;
     top: 35px;
   }
 
   .React {
+
     width: 150px;
     top: 20px;
   }
 
   .node {
     height: 95px;
+    width: 175px;
     top: 35px;
   }
 
@@ -313,5 +387,7 @@ body {
     max-width: 80000px;
     justify-content: center;
   }
+
+  
 
 }
