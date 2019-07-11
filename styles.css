@@ -63,7 +63,7 @@ body {
 .main-div {
   background-color:lightgray;
   border-radius:8px;
-  height:800px;
+  height:fit-content;
   border: 1px solid grey;
   margin: 10px;
   padding: 0px 10px 10px 10px;
@@ -75,6 +75,7 @@ body {
   height:125px;
   background-color:grey;
   border-radius: 200%;
+  margin-top:5px;
 }
 
 .profile-pic {
@@ -104,8 +105,8 @@ body {
 
 .description-p {
   border:1px grey dotted;
-  height:590px;
-  margin: 19px;
+  height:550px;
+  /* margin: 19px; */
   font-size: 20px;
 }
 
@@ -120,7 +121,8 @@ body {
 
 .hr {
   border: grey 1px solid;
-  padding:0px;
+  padding:none;
+  margin:none;
 }
 
 .med-profile-pic {
@@ -131,20 +133,17 @@ body {
   display: none;
 }
 .projects{
-  border:1px solid black;
+  border:1px solid grey;
   height:300px;
-  width:103%;
+  width:100%;
   position: relative;
-  left:-10px;
   background-color:lightgray;
 }
 .bottom-btn-section{
-  background-color: lightslategray;
+  background-color: lightgray;
   height:75px;
-  width:103%;
-  position:relative;
-  left:-10px;
-  margin-bottom:5px;
+ width: auto;
+
 }
 
 @media (min-width: 768px) {
@@ -155,6 +154,7 @@ body {
 
   .main-div {
     border: none;
+    height:;
   }
 
   .hr {
@@ -162,7 +162,7 @@ body {
   }
 
   .top-div {
-    border-bottom: 1px grey solid;
+    border-bottom: 1px lightgrey solid;
   }
 
   .top-section {
@@ -174,22 +174,21 @@ body {
   .lightbulb {
     align-self: center;
     position: relative;
-    top: -25px;
+    top:-10px;
     margin-left: 10px;
     max-width: 95px;
   }
 
   .top-btn-section {
     display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 15px;
-    background-color:grey;
+    justify-content: space-between;
+    width:100%;   
   }
 
   .btn {
     height: 45px;
-    width: 125px;
+    width: 105px;
+    flex-grow: 2;
   }
 
   .contact-btn {
@@ -206,8 +205,7 @@ body {
     border-radius: 50px;
     width: 165px;
     height: 155px;
-    margin-left: auto;
-    margin-right: auto;
+   margin:10px auto 10px auto;
   }
 
 .photo{
@@ -224,15 +222,11 @@ body {
   }
 
   .icon-section {
-    font-size:65px;
+    font-size:45px;
     height:65px;
-    width:97.4%;
     background-color:grey;
     display: flex;
     justify-items: space-between;
-    position: relative;
-    left:10px;
-    bottom:-100px;
   }
 
   .icon {
@@ -291,15 +285,19 @@ body {
 
   .description-p {
     margin: 5px;
+    width:auto;
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    border:none;
   }
 
   .med-profile-pic {
     width: 250px;
     height: 240px;
     background-color:lightslategray;
+    margin: 20px auto 10px auto;
+    border: none;
   }
 
   .icon-section {
