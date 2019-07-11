@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Hi... I'm Paul</title>
 </head>
@@ -14,25 +15,32 @@
     <main>
       <header>
         <div class="top-div">
-          <section class="top-section container"><img class="lightbulb" src=" images\lightbulb.png" alt="lightbulb">
+          <section class="top-section container">
+            <img class="lightbulb" src=" images\lightbulb.png" alt="lightbulb">
             <section class="top-btn-section container">
-              <button class="btn portfolio">Portfolio</button>
-              <button class="btn Github">Github</button>
-              <button class="btn Linked-In">Linked-In</button>
-              <button class="btn top-contact-btn">Contact</button>
+              <input type="button" id="Portfolio" class="btn portfolio" onclick=" window.location.href='#projects'"
+                value="Projects" role="button">
+              <input type="button" id="Github" class="btn Github" value="Github" role="button">
+              <input type="button" id="Linked-in" class="btn Linked-In" value="Linked In" role="button">
+              <input type="button" id="Contact" class="btn top-contact-btn" value="Contact" role="button">
             </section>
+          </section>
+          <section id="contact-section" class="contact-section container">
+            <a href="mailto:paulpilcher@live.com?subject=Saw Your Portfolio Site" id="email-contact">Email me at:
+              paulpilcher@live.com</a>
           </section>
         </div>
         <section class="h-section container">
           <img class="med-profile-pic" src="images\Paul Profile Photo.PNG" alt="profile picture">
           <h1 class="hero-h1">Hi... I'm Paul</h1>
-          <h6 class="hero-h6">I'm a full stack React developer & UI/UX specialist.</h6>
+          <h6 class="hero-h6">I'm a full stack React developer & UI/UX designer <br>Who loves working with teams to
+            bring ideas to life.</h6>
         </section>
       </header>
       <div class="main-div">
         <section class="main-section container">
           <img class="profile-pic" src="images\Paul Profile Photo.PNG" alt="profile picture">
-          <button class="btn contact-btn">Contact Me!</button>
+          <button id="Contact" class="btn contact-btn">Contact Me!</button>
           <p class="description-p">I am a web developer and graduate of the Full Stack Web Development bootcamp at
             Thinkful.
             I
@@ -45,22 +53,46 @@
           </p>
 
         </section>
-        <hr class="hr" />
+
         <section class="bottom-btn-section container">
-          <button class="btn portfolio">Portfolio</button>
-          <button class="btn Github">Github</button>
-          <button class="btn Linked-In">Linked-In</button>
+          <button id="email-me" class="btn email">Email Me!</button>
+          <input type="button" id="Github2" class="btn Github" value="Github">
+          <button id="Linked-In2" class="btn Linked-In">Linked-In</button>
+        </section>
+        <section id="contact-section2" class="contact-section container">
+          <a href="mailto:paulpilcher@live.com?subject=Saw Your Portfolio Site" id="email-contact2">Email me
+            at: paulpilcher@live.com</a>
         </section>
       </div>
+      <section class="projects" id="projects">
+        <h2 class="projects-h2">Checkout some of the cool projects I have built.</h2>
+        <a href="https://paul---.github.io/quiz-me-not/" target="_blank" class="texas-a">
+          <h4 class="texas-h4">jQuery Powered <br> Texas Quiz Game</h4>
+          <img src="images\Texas-Quiz-App.png" alt="Texas Quiz Project" class="texas-project-img">
+        </a>
+        <p class="texas-p">This is a good old fashioned quiz game about the state of Texas for anyone wanting to learn a
+          little more about the Lone Star State. Care has been taken to ensure that this app is accessible and able to
+          be played with the use of a keyboard.</p>
+        <h4 class="texas-list-h4">Technologies used:</h4>
+        <ol class="texas-ol">
+          <li>Semantic HTML5</li>
+          <li>CSS3</li>
+          <li>jQuery</li>
+        </ol>
+      </section>
+      <h3 class="icon-h3 container ">Some of the Technologies I Love</h3>
       <section class="container icon-section">
-        <img class="icon css3" src="images\CSS3-icon.png" alt="css3">
+
         <img class="icon html5" src="images\HTML5-icon.png" alt="html5">
-        <img class="icon jQuery" src="images\jQuery-icon.png" alt="jQuery">
+        <img class="icon css3" src="images\CSS3-icon.png" alt="css3">
         <img class="icon React" src="images\reactIconn.png" alt="React">
+        <img class="icon jQuery" src="images\jQuery-icon.png" alt="jQuery">
         <img class="icon node" src="images\nodejs.png" alt="node.js">
       </section>
     </main>
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
