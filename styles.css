@@ -33,6 +33,7 @@ body {
   display: inline-block;
   border: none;
   border-radius: 180%;
+  max-height:150px;
   width: 150px;
   margin: 0px;
 }
