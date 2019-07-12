@@ -1,7 +1,6 @@
 * {
   padding:2px;
   box-sizing: border-box;
-  /* border:1px pink dotted; */
 }
 
 body {
@@ -14,7 +13,8 @@ body {
 
 .primary {
   background-color: white;
-  max-width: 1400px;
+  max-width: 1300px;
+  border: 1px lightgray solid;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -172,7 +172,7 @@ body {
 
 .texas-project-img {
   width: 100%;
-  max-width:500px;
+  max-width:400px;
   padding:0px;
   margin:3px;
 }
@@ -188,6 +188,7 @@ body {
 }
 li{
   padding:0px;
+  margin-left:10px;
 }
 
 .icon-h3{
@@ -338,6 +339,24 @@ li{
 
 }
 
+@media (min-width:788px) {
+
+  .texas-p{
+    position:absolute;
+    display:inline-block;
+    width:20%;
+    max-width:400px;
+    font-size:20px;
+  }
+
+  .technologies-used{
+    /* position: relative;
+    top:-150px;
+    left: 420px; */
+    font-size:20px;
+  }
+}
+
 @media (min-width: 1184px) {
   .h-section {
     float: right;
@@ -386,6 +405,40 @@ li{
   .top-section {
     max-width: 80000px;
     justify-content: center;
+  }
+  .projects{
+    margin:10px 0px 0px 0px;
+  }
+  .texas-p{
+    position: absolute;
+    min-width:450px;
+    width:50%;
+    
+  }
+
+}
+
+@media (min-width: 1397px) {
+
+  .projects{
+    position: relative;
+    top:25px;
+  }
+
+   .texas-p {
+     display: inline-block;
+     width: auto;
+     position: absolute;
+ 
+   }
+
+.technologies-used{
+  top:-200px;
+}
+
+  .icon-h3{
+    position: relative;
+    top:25px;
   }
 
   
