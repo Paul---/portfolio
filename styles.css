@@ -12,7 +12,7 @@ body {
 
 .primary {
   background-color: white;
-  max-width: 1400px;
+  max-width: 1300px;
   border: 1px lightgray solid;
   margin-left: auto;
   margin-right: auto;
@@ -41,10 +41,10 @@ body {
   display: none;
 }
 
-.contact-section{
-  border:1px lightgrey solid;
-  border-radius:8px;
-  display:none;
+.contact-section {
+  border: 1px lightgrey solid;
+  border-radius: 8px;
+  display: none;
 }
 
 .h-section {
@@ -125,55 +125,58 @@ body {
   border: 1px lightgrey dotted;
   margin: 10px;
   border-radius: 8px;
- }
-
-.projects-h2{
-  width:fit-content;
-  margin:0px;
-  padding:0px;
 }
-.texas-h4{
-  margin:0px;
-  padding:0px;
+
+.projects-h2 {
+  width: fit-content;
+  margin: 0px;
+  padding: 0px;
+}
+
+.texas-h4 {
+  margin: 0px;
+  padding: 0px;
 }
 
 .texas-a {
-  margin:0px;
+  margin: 0px;
   text-decoration: none;
   width: fit-content;
 }
 
-.texas-p{
-  display:inline-block;
-  width:100%;
-  margin:0px;
-  padding:0px;
+.texas-p {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .texas-project-img {
   width: 100%;
-  max-width:500px;
-  padding:0px;
-  margin:3px;
+  max-width: 400px;
+  padding: 0px;
+  margin: 3px;
 }
 
-.texas-list-h4{
-  padding:0px;
-  margin:5px 0px 0px 0px;
+.texas-list-h4 {
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
 }
 
-.texas-ol{
-  padding:0px 0px 5px 0px;
-  margin:0px;
-}
-li{
-  padding:0px;
-  margin-left:10px;
+.texas-ol {
+  padding: 0px 0px 5px 0px;
+  margin: 0px;
 }
 
-.icon-h3{
-  display:none;
+li {
+  padding: 0px;
+  margin-left: 10px;
 }
+
+.icon-h3 {
+  display: none;
+}
+
 .icon-section {
   display: none;
 }
@@ -251,10 +254,10 @@ li{
     font-size: 40px;
   }
 
-  .icon-h3{
-  display: flex;
-  font-size:25px;
-  margin:0px;
+  .icon-h3 {
+    display: flex;
+    font-size: 25px;
+    margin: 0px;
   }
 
   .icon-section {
@@ -299,6 +302,24 @@ li{
 
 }
 
+@media (min-width:788px) {
+
+  .texas-p {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    max-width: 400px;
+    font-size: 20px;
+  }
+
+  .technologies-used {
+    /* position: relative;
+    top:-150px;
+    left: 420px; */
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 1184px) {
   .h-section {
     float: right;
@@ -340,6 +361,42 @@ li{
   .top-section {
     max-width: 80000px;
     justify-content: center;
+  }
+
+  .projects {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .texas-p {
+    position: absolute;
+    min-width: 450px;
+    width: 50%;
+
+  }
+
+}
+
+@media (min-width: 1397px) {
+
+  .projects {
+    position: relative;
+    top: 25px;
+  }
+
+  .texas-p {
+    display: inline-block;
+    width: auto;
+    position: absolute;
+
+  }
+
+  .technologies-used {
+    top: -200px;
+  }
+
+  .icon-h3 {
+    position: relative;
+    top: 25px;
   }
 
 }
