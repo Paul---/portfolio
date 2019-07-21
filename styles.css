@@ -197,6 +197,10 @@ li {
   display: none;
 }
 
+.github-link{
+  color:blue;
+}
+
 
 @media (min-width: 768px) {
 
